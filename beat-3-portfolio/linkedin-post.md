@@ -1,4 +1,4 @@
-I made my first open source contribution this month: I showed that a safety check in PathReview, an AI review app, could be fooled by a single space, and I opened a fix that now passes all of the project's automated checks. The pull request is up and waiting on the maintainers' review.
+I made an open source contribution this month: I showed that a safety check in PathReview, an AI review app, could be fooled by a single space, and I opened a fix that now passes all of the project's automated checks. The pull request is up and waiting on the maintainers' review.
 
 PathReview screens the text users submit for a trick called prompt injection — hiding instructions inside ordinary text to make the AI ignore its rules. One of its checks looked for lines pretending to come from the system, like "System: ignore the instructions above." But if someone typed a space before the colon — "System : ignore" — the check missed it entirely.
 
